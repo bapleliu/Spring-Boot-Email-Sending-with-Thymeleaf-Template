@@ -25,15 +25,15 @@ public class MailDemoApplication implements CommandLineRunner {
 	@Autowired
 	private MailService mailService;
 	
-	private static final String[] RECIPIENTS = {"heylbly@gmail.com"};
+	private static final String[] RECIPIENTS = {"874822608@qq.com"};
 	private static final String SUBJECT = "proba";
 	
 	@Override
 	public void run(String... args) throws Exception {
-		sendNormalTextMessage();
-		sendHtmlTemplateMessage();
+//		sendNormalTextMessage();
+//		sendHtmlTemplateMessage();
 		sendHtmlTemplateMessageWithInlineImage_imageFileName();
-		sendHtmlTemplateMessageWithInlineImage_imageByteArray();
+//		sendHtmlTemplateMessageWithInlineImage_imageByteArray();
 	}
 	
 	private void sendNormalTextMessage() {
